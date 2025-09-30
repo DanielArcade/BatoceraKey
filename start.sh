@@ -9,12 +9,7 @@ chmod -R 777 "/userdata/system"
 # Copia o arquivo batocera_key.key para /userdata/system
 cp "/userdata/system/key/batocera_key.key" "/userdata/system/"
 
-# Verifica se o arquivo foi copiado com sucesso
-if [ -f "/userdata/system/batocera_key.key" ]; then
-    echo "Arquivo batocera_key.key copiado com sucesso!"
-else
-    echo "Erro: arquivo batocera_key.key não copiado!"
-fi
+
 
 # Remove a pasta clonada se existir
 [ -d /userdata/system/key ] && rm -rf /userdata/system/key
