@@ -1,5 +1,6 @@
 #!/bin/bash
-
+dialog --infobox "✅ Ativado com sucesso!" 5 40
+sleep 2
 # Monta a partição /userdata como leitura/escrita
 mount -o remount,rw /userdata
 
