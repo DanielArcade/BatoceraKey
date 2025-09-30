@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo cp "/userdata/system/key/batocera_key.key" "/userdata/system/"
+sudo cp "/userdata/system/key/batocera_key.key" "/userdata/system"
 #sudo chmod 644 "/userdata/system/batocera_key.key"
 #sudo chown arcade:arcade "/userdata/system/batocera_key.key"
 
