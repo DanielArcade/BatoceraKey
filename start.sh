@@ -5,7 +5,7 @@ sudo cp "/userdata/system/key/batocera_key.key" "/userdata/system"
 #sudo chown arcade:arcade "/userdata/system/batocera_key.key"
 
 
-sleep 6
+sleep 5
 
 # Remove a pasta clonada com segurança (só se existir)
 [ -d /userdata/system/key ] && sudo rm -rf /userdata/system/key
