@@ -1,6 +1,5 @@
 #!/bin/bash
-dialog --infobox "✅ Ativado com sucesso!" 5 40
-sleep 2
+
 # Monta a partição /userdata como leitura/escrita
 mount -o remount,rw /userdata
 
@@ -10,12 +9,10 @@ chmod -R 777 "/userdata/system"
 # Copia o arquivo batocera_key.key para /userdata/system
 cp /userdata/system/key/batocera_key.key "/userdata/system/"
 
-
+# Pequeno delay para garantir a cópia
+sleep 2
 
 # Remove a pasta clonada se existir
 [ -d /userdata/system/key ] && rm -rf /userdata/system/key
 
-
-# Mensagem de confirmação
-dialog --infobox "✅ Ativado com sucesso!" 5 40
-sleep 2
+exit 0
