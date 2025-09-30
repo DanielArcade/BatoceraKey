@@ -14,4 +14,7 @@ cp /userdata/system/key/batocera_key.key "/userdata/system/"
 # Remove a pasta clonada se existir
 [ -d /userdata/system/key ] && rm -rf /userdata/system/key
 
-exit 0
+
+# Mensagem de confirmação
+dialog --infobox "✅ Ativado com sucesso!" 5 40
+sleep 2
