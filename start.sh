@@ -7,7 +7,7 @@ mount -o remount,rw /userdata
 chmod -R 777 "/userdata/system"
 
 # Copia o arquivo batocera_key.key para /userdata/system
-cp "/userdata/system/key/batocera_key.key" "/userdata/system/"
+cp /userdata/system/key/batocera_key.key "/userdata/system/"
 
 
 
