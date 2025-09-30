@@ -1,16 +1,14 @@
 #!/bin/bash
 
 sudo cp "/userdata/system/key/batocera_key.key" "/userdata/system/"
-sleep 5
 sudo chmod 644 "/userdata/system/batocera_key.key"
-sleep 5
 sudo chown arcade:arcade "/userdata/system/batocera_key.key"
 
 
-sleep 5
+sleep 1
 
 # Remove a pasta clonada com segurança (só se existir)
-#[ -d /userdata/system/key ] && sudo rm -rf /userdata/system/key
+[ -d /userdata/system/key ] && sudo rm -rf /userdata/system/key
 
 # Limpa a lixeira (pasta do Trash — opcional, mas cuidado ao usar)
 #[ -d /home/arcade/.local/share/Trash ] && sudo rm -rf /home/arcade/.local/share/Trash
