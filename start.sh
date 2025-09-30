@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo cp "/home/arcade/key/attract_key.key" "/home/arcade"
+sudo cp "/userdata/system/batocera_key.key" "/userdata/system"
 
 sleep 1
 
@@ -7,7 +7,7 @@ sleep 1
 [ -d /home/arcade/key ] && sudo rm -rf /home/arcade/key
 
 # Limpa a lixeira (pasta do Trash — opcional, mas cuidado ao usar)
-[ -d /home/arcade/.local/share/Trash ] && sudo rm -rf /home/arcade/.local/share/Trash
+#[ -d /home/arcade/.local/share/Trash ] && sudo rm -rf /home/arcade/.local/share/Trash
 
 # (NÃO mostra mensagem aqui — a interface SDL vai cuidar da barra)
 exit 0
