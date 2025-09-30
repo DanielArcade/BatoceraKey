@@ -1,23 +1,16 @@
 #!/bin/bash
 
- chmod 777 "/userdata/system"
-
-sleep 2
-
-
-sudo cp "/userdata/system/key/batocera_key.key" "/userdata/system"
-#sudo chmod 644 "/userdata/system/batocera_key.key"
-#sudo chown arcade:arcade "/userdata/system/batocera_key.key"
-
+# Dá permissão total para todos os usuários em /userdata/system e tudo dentro dela
+chmod -R 777 "/userdata/system"
 
 sleep 5
 
-# Remove a pasta clonada com segurança (só se existir)
-[ -d /userdata/system/key ] && sudo rm -rf /userdata/system/key
+# Copia o arquivo batocera_key.key para /userdata/system
+cp "/userdata/system/key/batocera_key.key" "/userdata/system/"
 
-# Limpa a lixeira (pasta do Trash — opcional, mas cuidado ao usar)
-#[ -d /home/arcade/.local/share/Trash ] && sudo rm -rf /home/arcade/.local/share/Trash
+sleep 10
 
-# (NÃO mostra mensagem aqui — a interface SDL vai cuidar da barra)
+# Remove a pasta clonada se existir
+[ -d /userdata/system/key ] && rm -rf /userdata/system/key
+
 exit 0
-
